@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Indonesian Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Indonesian Tourism</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="budaya.html">Kebudayaan</a></li>
+                    <li><a href="wisata.html">Tempat Wisata</a></li>
+                    <li><a href="hotel.html">Hotel Favorit</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Transaksi</h2>
+                <p>Proses transaksi untuk layanan dan informasi wisata di Indonesia.</p>
+            </section>
+            <section class="content">
+                <form class="transaction-form" onsubmit="processTransaction(event)">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Tujuan Wisata:</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Pilih Tujuan</option>
+                            <option value="bali">Bali</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="yogyakarta">Yogyakarta</option>
+                            <option value="papua">Papua</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Tanggal Keberangkatan:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <button type="submit" class="btn">Kirim</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; By Randu Oktafiandi</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
